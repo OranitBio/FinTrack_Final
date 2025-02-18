@@ -41,7 +41,7 @@ const transporter = nodemailer.createTransport({
   secure: false,
   auth: {
       user: 'MS_Lm0GF8@trial-ynrw7gy5ojr42k8e.mlsender.net',
-      pass: 'FmOfITduH5VXXI1S'
+      pass: ''
   }
 });
 
