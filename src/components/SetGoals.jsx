@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 import { gapi } from 'gapi-script';
 
-const CLIENT_ID = "71468948550-8o8vg6pic2kbhrk8ik98pu2srittqkvm.apps.googleusercontent.com";
-const API_KEY = "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";
+const db = mysql.createConnection({
+    CLIENT_ID: process.env.CLIENT_ID,
+    API_KEY: process.env.API_KEY
+})
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
